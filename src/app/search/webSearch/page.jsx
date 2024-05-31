@@ -1,4 +1,4 @@
-import WebSearchResults from '../../../components/WebSearchResult';
+import WebSearchResult from '@/components/WebSearchResult';
 import Link from 'next/link';
 
 export default async function WebSearchPage({ searchParams }) {
@@ -27,5 +27,5 @@ export default async function WebSearchPage({ searchParams }) {
         );
     }
 
-    return <div>{results && <WebSearchResults results={data} />}</div>;
+    return <div>{results && <WebSearchResult results={data} />}</div>;
 }
